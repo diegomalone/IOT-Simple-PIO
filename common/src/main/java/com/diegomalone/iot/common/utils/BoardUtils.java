@@ -110,6 +110,10 @@ public class BoardUtils {
         return "BCM26";
     }
 
+    public static String getGPIOForServo() {
+        return "PWM0";
+    }
+
     private static String getBoardVariant() {
         if (!sBoardVariant.isEmpty()) {
             return sBoardVariant;

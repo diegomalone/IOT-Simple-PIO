@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/iot-simple-pio.iml" filepath="$PROJECT_DIR$/iot-simple-pio.iml" />
       <module fileurl="file://$PROJECT_DIR$/ledchain/ledchain.iml" filepath="$PROJECT_DIR$/ledchain/ledchain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servo/servo.iml" filepath="$PROJECT_DIR$/servo/servo.iml" />
     </modules>
   </component>
 </project>
