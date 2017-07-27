@@ -4,6 +4,7 @@ import android.os.Build;
 
 import com.google.android.things.pio.PeripheralManagerService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -45,6 +46,68 @@ public class BoardUtils {
             default:
                 throw new IllegalStateException("Unknown Build.DEVICE " + Build.DEVICE);
         }
+    }
+
+    public static List<String> getGPIOForLED(int numberOfLEDs) {
+        List<String> pinList = new ArrayList<>();
+
+        if (numberOfLEDs >= 1) {
+            pinList.add(getGPIOForLED());
+        }
+
+        if (numberOfLEDs >= 2) {
+            pinList.add("BCM5");
+        }
+
+        if (numberOfLEDs >= 3) {
+            pinList.add("BCM12");
+        }
+
+        if (numberOfLEDs >= 4) {
+            pinList.add("BCM22");
+        }
+
+        if (numberOfLEDs >= 5) {
+            pinList.add("BCM23");
+        }
+
+        if (numberOfLEDs >= 6) {
+            pinList.add("BCM24");
+        }
+
+        if (numberOfLEDs >= 7) {
+            pinList.add("BCM25");
+        }
+
+        return pinList;
+    }
+
+    /**
+     * Return the GPIO pin that the Button is connected on.
+     */
+    public static String getGPIOForButton() {
+        switch (getBoardVariant()) {
+            case DEVICE_EDISON_ARDUINO:
+                return "IO12";
+            case DEVICE_EDISON:
+                return "GP44";
+            case DEVICE_JOULE:
+                return "J7_71";
+            case DEVICE_RPI3:
+                return "BCM21";
+            case DEVICE_IMX6UL_PICO:
+                return "GPIO4_IO20";
+            case DEVICE_IMX6UL_VVDN:
+                return "GPIO3_IO01";
+            case DEVICE_IMX7D_PICO:
+                return "GPIO_174";
+            default:
+                throw new IllegalStateException("Unknown Build.DEVICE " + Build.DEVICE);
+        }
+    }
+
+    public static String getGPIOForSimpleInput() {
+        return "BCM26";
     }
 
     private static String getBoardVariant() {

@@ -1,1 +1,1 @@
-include ':blink', ':common'
+include ':blink', ':common', ':ledchain'

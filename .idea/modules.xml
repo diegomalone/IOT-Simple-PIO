@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/blink/blink.iml" filepath="$PROJECT_DIR$/blink/blink.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/iot-simple-pio.iml" filepath="$PROJECT_DIR$/iot-simple-pio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ledchain/ledchain.iml" filepath="$PROJECT_DIR$/ledchain/ledchain.iml" />
     </modules>
   </component>
 </project>

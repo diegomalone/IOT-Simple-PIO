@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/blink" />
             <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/ledchain" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
